@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/icons8-male-user-16 (1).png" type="image/x-icon">
+  <!-- icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <title>Aprendendo Linguagem C</title>
+</head>
+
+<body>
+  <nav id="Nav-Mobile" class="Estreito" onclick="toggleSize(this)">
+    <span class="material-symbols-outlined visible" id="Icon-Nav-Mobile" style="display:block ;">expand_more</span>
+
+
+    <ul id="Navega-Mobile" style="display:none;">
+      <li class="Navega" onclick="MonstraSobreMim()">INTRODUÇÃO</li>
+      <li class="Navega" onclick="MonstraExperiencia()">EXPERIÊNCIA</li>
+      <li class="Navega" onclick="MonstraFormacao()">BIBLIOTECAS</li>
+      <li class="Navega" onclick="MonstraProjetos()">ENTRADA</li>
+      <li class="Navega" onclick="MonstraContato()">PROCESSAMENTO</li>
+      <li class="Navega" onclick="MonstraSaida()">SAIDA</li>
+    </ul>
+
+  </nav>
+
+  <nav id="Navegar">
+    <ul>
+      <!-- <li id="Foto"></li> -->
+      <li class="Navega" onclick="MonstraSobreMim()">INTRODUÇÃO</li>
+      <li class="Navega" onclick="MonstraExperiencia()">DESENVOLVIMENTO</li>
+      <li class="Navega" onclick="MonstraFormacao()">BIBLIOTECAS</li>
+      <li class="Navega" onclick="MonstraProjetos()">ENTRADA</li>
+      <li class="Navega" onclick="MonstraContato()">PROCESSAMENTO</li>
+      <li class="Navega" onclick="MonstraSaida()">SAIDA</li>
+
+    </ul>
+  </nav>
+
+  <!-- INTRODUÇÃO -->
+  <article id="SobreMim">
+    <h1 class="Titulo">INTRODUÇÃO</h1>
+    <p class="Texto">A linguagem C é uma linguagem de programação de alto nível, sendo muito influente no aprendizado de
+      lógica de programação e conhecimentos práticos de desenvolvimento para estudantes de universidades e na construção
+      de grandes softwares de sistemas embarcados de GPS de automóveis ou em sistemas operacionais como o Linux.
+    </p>
+
+    <p class="Texto">A linguagem C foi criada por Dennis Ritchie na década de 1970 tendo como objetivo a criação do
+      sistema operacional UNIX. Porém, rapidamente se tornou uma linguagem muito popular e utilizada em outros grandes
+      sistemas pelo fato de ser simples e muito eficiente em situações onde o processamento e espaço de memória é muito
+      baixo, esse fato torna até mesmo hardware muito inferiores utilizáveis. Sua usabilidade simples e funcionalidades
+      poderosas, a torna uma linguagem ideal a ser explorada por aqueles que querem aprender sobre o mundo da
+      programação.</p>
+
+    <p class="Texto">Nesta tese, iremos abordar os pontos principais das funcionalidades e usabilidades na linguagem com
+      objetivo de contribuir com a aprendizagem do leitor sobre os conceitos básicos da linguagem de programação C,
+      assim
+      podendo desenvolver novas práticas com a programação.</p>
+
+
+
+  </article>
+  <!-- DESENVOLVIMENTO -->
+  <article id="Experiencia">
+
+    <h1 class="Titulo">DESENVOLVIMENTO</h1>
+    <p class="Texto">As bibliotecas usadas nos códigos da linguagem C são de suma importância para o bom funcionamento
+      do
+      programa. Cada uma desempenha uma função específica, ajudando o programador a melhorar sua eficiência e
+      simplificar
+      comandos. Apesar de não ser necessário utilizar bibliotecas que não irão ajudar, colocá-las não quebram o projeto.
+      Porém o programa pode não funcionar caso não sejam incluídas as bibliotecas corretas.
+    </p>
+
+    <p class="Texto">Dentro do processamento de dados é constituído em três etapas para que o sistema execute certo.
+      Se inicia com a entrada de dados, onde o usuário insere as informações básicas como um valor, uma palavra, entre
+      outros, essas informações são armazenadas dentro de uma variável. Na segunda etapa vem o processamento de dados,
+      onde é processado e executado essas informações declaradas pelo usuário, que no entanto a última etapa é a saída
+      de
+      dados que nos proporciona um resultado final desta operação.</p>
+
+  </article>
+  <!-- BIBLIOTECAS -->
+  <article id="Formacao">
+    <h1 class="Titulo">BIBLIOTECAS</h1>
+    <p class="Texto">As bibliotecas usadas na linguagem C possuem muita importância na hora de produzir um código. Elas dão um ampla gama de funções pré-definidas, fazendo com que o programador use-as para facilitar a execução de algumas tarefas. Para conseguir usar uma biblioteca, deve-se digitar ‘#include<nome-da-biblioteca>’, assim ela funcionará no código.
+    </p>
+
+    <p class="Texto">Além disso, alguns comandos só funcionam corretamente se a biblioteca certa estiver sendo utilizada. Ainda assim, usar mais bibliotecas do que será necessário não irá prejudicar seu programa, porém sua função será inútil. Aqui estão breves introduções de algumas das principais bibliotecas usadas na linguagem C :</p>
+
+    <h2 class="Sub_titulo">stdio.h</h2>
+    <p class="Texto">A biblioteca ‘stdio.h’ é útil para realizar a entrada e saída de dados num programa, a exemplo, os comandos “printf” (saída de dados) e “scanf”(entrada de dados). Seu nome significa, em português, entrada e saída padronizadas.</p>
+
+    <h2 class="Sub_titulo">stdlib.h</h2>
+    <p class="Texto">A biblioteca ‘stdlib.h’ usa alocação e desalocação de memória, além de poder converter números que estão representados em uma string para dados que equivalem a números.</p>
+
+    <h2 class="Sub_titulo">string.h</h2>
+    <p class="Texto">A biblioteca ‘string.h’, como o próprio nome já menciona, é usada para operar strings que são cadeias de caracteres que sejam 2 ou mais letras e símbolos especiais. Ela pode
+      3
+      copiar caracteres, compará-los e até procurar por substrings. Cada uma de suas funções possuem finalidades diferentes em quaisquer cenários.</p>
+
+    <h2 class="Sub_titulo">math.h</h2>
+    <p class="Texto">A biblioteca ‘math.h’ é utilizada para que operações matemáticas complexas sejam feitas com mais facilidade. Pode-se fazer cálculos com funções trigonométricas, raízes quadradas, logaritmos, entre outros. Usando essa biblioteca os valores retornam como tipo “double”.</p>
+  </article>
+  <!-- CONTATOS -->
+  <article id="Contato">
+    <h1 class="Titulo" style="margin-bottom: 10px;">PROCESSAMENTO DE DADOS</h1>
+
+   <P class="Texto">Processamento de dados em linguagem C trata-se de como manipular informações em um programa escrito em C. Com isso conseguimos fazer a leitura de dados de arquivos, cálculos matemáticos, composições de informações e exibição de resultados. Para conseguirmos executar corretamente esse processamento temos que realizar três etapas que são elas: Entrada de dados, processamento de dados e saída de dados. Na etapa de entrada de dados precisamos declarar as nossas variáveis. As variáveis em si servem para armazenar informações, como números, textos, caracteres e outros tipos de dados. Na etapa de processamento de dados o sistema vai avaliar os dados inseridos, e na última etapa que é a saída de dados ele vai nos informar o resultado que solicitamos ao sistema.</P>
+   <p class="Texto">Por exemplo: Você pode solicitar para que o usuário insira dois valores e com esses dois valores seja feito uma soma. Neste caso você vai criar três variáveis inteiras A, B e soma, primeiro você vai solicitar para que o usuário insira os valores em A e B, depois dentro do printf você vai declarar que soma=A+B, e por fim você vai pedir para o programa informar este resultado na tela.</p>
+   <!-- <img src="" alt=""> -->
+   <p class="Texto">Vamos supor que o usuário informou no valor A = 10 e no valor B = 20, no entanto esse código exibirá o resultado “A soma dos valores é igual: 30” na tela. Simplificando o processamento de dados é a tarefa que o programa executa com os dados que recebe. No código informado acima como exemplo a entrada de dados são os valores, o processamento de dados é a soma destes valores, e a saída de dados é o resultado da soma dos valores.</p>
+  </article>
+  <!-- ENTRADA -->
+  <article id="Projetos">
+    <h1 class="Titulo">ENTRADA DE DADOS</h1>
+    <p class="Texto">A entrada de dados em linguagem c é usada nas bibliotecas, mas especificamente nas funções dela , como scanf e fgets, , para receber informações dos dispositivos ou de algum usuário, recebendo arquivos também, a principal função é scanf, para usar ela é necessário definir a string de formato e as variáveis que será onde os dados vão ser armazenados, scanf executa as mesmas regras que a função printf, exemplo:"%d %f %s", resumindo a entrada de dados Tem por função efetuar a leitura de dados de uma fonte externa. Vou mostrar abaixo as principais funções de entrada de dados em c:
+    </p>
+
+    <h2 class="Sub_titulo">SCANF:</h2>
+    <p class="Texto">a função dele é ler o dado digitado pelo usuário, toda vez que acionado esse comando o programa irá esperar um dado vindo do teclado, que quando ocorrer será armazenado em uma variável.
+    </p>
+    <!-- <img src="" alt=""> -->
+    <h2 class="Sub_titulo">GETCHAR:</h2>
+    <p class="Texto">Já o getchar é usado para ler um caracter do teclado, além de ler ele faz a função de converter para int.
+    </p>
+    <!-- <img src="" alt=""> -->
+    <h2 class="Sub_titulo">FGETS:</h2>
+    <p class="Texto">serve para ler uma linha de texto inteira, e também espaço em branco e arquivos, muito útil para ler strings completas.
+    </p>
+    <!-- <img src="" alt=""> -->
+
+    
+  </article>
+  <!-- SAIDA   -->
+  <article id="saida">
+    <h1 class="Titulo">SAÍDA DE DADOS</h1>
+   <p class="Texto">A saída de dados em linguagem C é um procedimento essencial para a exibição de informações na tela do computador ou redirecionamento para outros dispositivos de saída. Isso é indispensável em um programa que faz comunicação de informações importantes ao usuário
+    5
+    ou que armazena dados para ter sua amostra no futuro. A principal função utilizada para saída de dados em C é a printf (). Aqui estão alguns postos-chaves sobre a saída de dados em C:</p>
+    
+    <p class="Texto">PRINTF (): O printf () é a principal função de forma de saída de dados em C. Permite que você formate e exiba texto na tela ou em outro dispositivo de saída. A sintaxe básica é:</p>
+    <img src="" alt="">
+    <p class="Texto">
+      Essa expressão "Olá Mundo!" é uma string que permite a inclusão de texto fixo com especificadores de formato, tais como %d ou %i para inteiros, %f para números de ponto flutuante, como números decimais e %s para strings, entre outros. Os especificadores de formato são substituídos pelos valores correspondentes que você deseja apresentar.
+Especificadores de formato: Os especificadores de formato são usados para controlar a formatação da saída. Aqui estão alguns exemplos comuns, que incluem:
+    </p>
+    <ol class="Texto">
+      <li>%d ou %i para inteiros.</li>
+      <li>%f para números de ponto flutuante(float)/número decimais.</li>
+      <li>%c para caracteres.</li>
+      <li>%s para strings de caracteres.</li>
+      <li>%x para exibir números em hexadecimal.</li>
+    </ol>
+    <p class="Texto">Por exemplo : </p>
+    <img src="" alt="">
+    <p class="Texto">Isso exibirá "Tenho 19 anos." na tela.</p>
+    <img src="" alt="">
+    <p class="Texto">Em resumo, a saída de dados em C é realizada principalmente por meio da função printf(), que permite que você formate e exiba informações de maneira flexível. Essa funcionalidade é essencial para criar programas interativos e informativos em C.</p>
+    </article>
+
+
+
+
+
+
+  <script>
+    function MonstraExperiencia() {
+      var Experiencia = document.getElementById('Experiencia');
+      if (Experiencia.style.display === 'none' || Experiencia.style.display === '') {
+        Experiencia.style.display = 'block';
+        SobreMim.style.display = 'none';
+        Projetos.style.display = 'none';
+        Formacao.style.display = 'none';
+        Contato.style.display = 'none';
+        saida.style.display = 'none';
+      }
+    }
+
+    function MonstraSobreMim() {
+      var SobreMim = document.getElementById('SobreMim');
+      if (SobreMim.style.display === 'none' || SobreMim.style.display === '') {
+        Experiencia.style.display = 'none';
+        Projetos.style.display = 'none';
+        SobreMim.style.display = 'block';
+        Contato.style.display = 'none';
+        Formacao.style.display = 'none';
+        saida.style.display = 'none';
+      }
+    }
+
+    function MonstraFormacao() {
+      var Formacao = document.getElementById('Formacao');
+      if (Formacao.style.display === 'none' || Formacao.style.display === '') {
+        SobreMim.style.display = 'none';
+        Experiencia.style.display = 'none';
+        Projetos.style.display = 'none';
+        Contato.style.display = 'none';
+        Formacao.style.display = 'block';
+        saida.style.display = 'none';
+      }
+    }
+
+    function MonstraContato() {
+      var Contato = document.getElementById('Contato');
+      if (Contato.style.display === 'none' || Contato.style.display === '') {
+        SobreMim.style.display = 'none';
+        Experiencia.style.display = 'none';
+        Projetos.style.display = 'none';
+        Formacao.style.display = 'none';
+        Contato.style.display = 'block';
+        saida.style.display = 'none';
+
+      }
+    }
+
+
+    function MonstraProjetos() {
+      var Projetos = document.getElementById('Projetos');
+      if (Projetos.style.display === 'none' || Projetos.style.display === '') {
+        SobreMim.style.display = 'none';
+        Experiencia.style.display = 'none';
+        Formacao.style.display = 'none';
+        Contato.style.display = 'none';
+        Projetos.style.display = 'block';
+        saida.style.display = 'none';
+      }
+    }
+
+    function MonstraSaida() {
+      var Projetos = document.getElementById('Projetos');
+      if (Projetos.style.display === 'none' || Projetos.style.display === '') {
+        SobreMim.style.display = 'none';
+        Experiencia.style.display = 'none';
+        Formacao.style.display = 'none';
+        Contato.style.display = 'none';
+        Projetos.style.display = 'none';
+        saida.style.display = 'block';
+      }
+    }
+
+    
+    function toggleSize(element) {
+      var IconNavMobile = document.getElementById("Icon-Nav-Mobile");
+      var NavegaMobile = document.getElementById("Navega-Mobile");
+
+
+      if (IconNavMobile.style.display === 'block') {
+        IconNavMobile.style.display = 'none';
+        NavegaMobile.style.display = 'block';
+      } else {
+        IconNavMobile.style.display = 'block';
+        NavegaMobile.style.display = 'none';
+      }
+
+      element.classList.toggle("Largo");
+
+    }
+
+
+  </script>
+</body>
+
+</html>
